@@ -4,7 +4,7 @@ import sys
 # Command and its arguments
 command = "./main"
 model = "-m ./models/ggml-base.en.bin"
-file_path = "-f " + sys.argv[1]  # Get the first parameter as the wav file path
+file_path = "-f " + sys.argv[1] + " -nt" # Get the first parameter as the wav file path
 
 # Combine into a single command
 full_command = f"{command} {model} {file_path}"
